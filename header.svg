@@ -26,37 +26,6 @@
       @keyframes draw { to { stroke-dashoffset:-104 } }
       @keyframes rotate { to { transform:rotate(360deg) } }
       @media (prefers-reduced-motion: reduce) { .star,.constellation,.node,.orbit { animation:none; } }
-      .typing-text {
-        font-family: inherit;
-        font-size: 16px;
-        fill: #cbd5e1;
-      }
-
-      .typing-char {
-        opacity: 0;
-        animation: type-in 0.01s forwards;
-        animation-delay: calc(var(--i) * 0.055s + 0.8s);
-      }
-
-      .typing-cursor {
-        opacity: 0;
-        animation:
-          cursor-appear 0.01s forwards,
-          blink 0.8s step-end 1.0s infinite;
-        animation-delay: 4.5s, 4.5s;
-      }
-
-      @keyframes type-in {
-        to { opacity: 1; }
-      }
-
-      @keyframes cursor-appear {
-        to { opacity: 1; }
-      }
-
-      @keyframes blink {
-        50% { opacity: 0; }
-      }
     </style>
   </defs>
   <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
@@ -157,85 +126,8 @@
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
     <text x="92" y="135" fill="#F3F5FF" font-size="54" font-weight="650" letter-spacing="-1.5">Charles Xu</text>
     <rect x="95" y="157" width="54" height="3" rx="1.5" fill="#91A5FF"/>
-    <text x="95" y="195" fill="#C6D0F2" font-size="18" font-weight="400" letter-spacing="1.1">BACKEND &amp; DISTRIBUTED SYSTEMS</text>
-    <g class="typing-text">
-      <text x="600" y="210" text-anchor="middle">
-        <tspan class="typing-char" style="--i:0">E</tspan>
-        <tspan class="typing-char" style="--i:1">x</tspan>
-        <tspan class="typing-char" style="--i:2">p</tspan>
-        <tspan class="typing-char" style="--i:3">l</tspan>
-        <tspan class="typing-char" style="--i:4">o</tspan>
-        <tspan class="typing-char" style="--i:5">r</tspan>
-        <tspan class="typing-char" style="--i:6">i</tspan>
-        <tspan class="typing-char" style="--i:7">n</tspan>
-        <tspan class="typing-char" style="--i:8">g</tspan>
-        <tspan class="typing-char" style="--i:9"> </tspan>
-        <tspan class="typing-char" style="--i:10">A</tspan>
-        <tspan class="typing-char" style="--i:11">I</tspan>
-        <tspan class="typing-char" style="--i:12"> </tspan>
-        <tspan class="typing-char" style="--i:13">I</tspan>
-        <tspan class="typing-char" style="--i:14">n</tspan>
-        <tspan class="typing-char" style="--i:15">f</tspan>
-        <tspan class="typing-char" style="--i:16">r</tspan>
-        <tspan class="typing-char" style="--i:17">a</tspan>
-        <tspan class="typing-char" style="--i:18">s</tspan>
-        <tspan class="typing-char" style="--i:19">t</tspan>
-        <tspan class="typing-char" style="--i:20">r</tspan>
-        <tspan class="typing-char" style="--i:21">u</tspan>
-        <tspan class="typing-char" style="--i:22">c</tspan>
-        <tspan class="typing-char" style="--i:23">t</tspan>
-        <tspan class="typing-char" style="--i:24">u</tspan>
-        <tspan class="typing-char" style="--i:25">r</tspan>
-        <tspan class="typing-char" style="--i:26">e</tspan>
-        <tspan class="typing-char" style="--i:27"> </tspan>
-        <tspan class="typing-char" style="--i:28">·</tspan>
-        <tspan class="typing-char" style="--i:29"> </tspan>
-        <tspan class="typing-char" style="--i:30">B</tspan>
-        <tspan class="typing-char" style="--i:31">u</tspan>
-        <tspan class="typing-char" style="--i:32">i</tspan>
-        <tspan class="typing-char" style="--i:33">l</tspan>
-        <tspan class="typing-char" style="--i:34">d</tspan>
-        <tspan class="typing-char" style="--i:35">i</tspan>
-        <tspan class="typing-char" style="--i:36">n</tspan>
-        <tspan class="typing-char" style="--i:37">g</tspan>
-        <tspan class="typing-char" style="--i:38"> </tspan>
-        <tspan class="typing-char" style="--i:39">R</tspan>
-        <tspan class="typing-char" style="--i:40">e</tspan>
-        <tspan class="typing-char" style="--i:41">l</tspan>
-        <tspan class="typing-char" style="--i:42">i</tspan>
-        <tspan class="typing-char" style="--i:43">a</tspan>
-        <tspan class="typing-char" style="--i:44">b</tspan>
-        <tspan class="typing-char" style="--i:45">l</tspan>
-        <tspan class="typing-char" style="--i:46">e</tspan>
-        <tspan class="typing-char" style="--i:47"> </tspan>
-        <tspan class="typing-char" style="--i:48">S</tspan>
-        <tspan class="typing-char" style="--i:49">y</tspan>
-        <tspan class="typing-char" style="--i:50">s</tspan>
-        <tspan class="typing-char" style="--i:51">t</tspan>
-        <tspan class="typing-char" style="--i:52">e</tspan>
-        <tspan class="typing-char" style="--i:53">m</tspan>
-        <tspan class="typing-char" style="--i:54">s</tspan>
-        <tspan class="typing-char" style="--i:55"> </tspan>
-        <tspan class="typing-char" style="--i:56">a</tspan>
-        <tspan class="typing-char" style="--i:57">t</tspan>
-        <tspan class="typing-char" style="--i:58"> </tspan>
-        <tspan class="typing-char" style="--i:59">S</tspan>
-        <tspan class="typing-char" style="--i:60">c</tspan>
-        <tspan class="typing-char" style="--i:61">a</tspan>
-        <tspan class="typing-char" style="--i:62">l</tspan>
-        <tspan class="typing-char" style="--i:63">e</tspan>
-      </text>
-
-      <!-- Blinking cursor; adjust x to the end of your subtitle -->
-      <rect
-        class="typing-cursor"
-        x="852"
-        y="195"
-        width="2"
-        height="19"
-        fill="#8b9cf6"
-      />
-    </g>
+    <text x="95" y="195" fill="#C6D0F2" font-size="18" font-weight="400" letter-spacing="1.1">SOFTWARE ENGINEER · AI INFRASTRUCTURE</text>
+    <text x="95" y="226" fill="#91A8D8" font-size="16" font-weight="400" letter-spacing=".65">Always Learning · Always Building</text>
   </g>
   <rect x="1" y="1" width="1198" height="318" rx="17" fill="none" stroke="#A5B4FC" stroke-opacity=".18"/>
 </svg>
